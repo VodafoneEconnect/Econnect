@@ -1,96 +1,117 @@
 <!DOCTYPE html>
- <html class="no-js" lang="en"><!--<![endif]-->
- <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-    <title>Econnect apps: Let's get mobile</title> 
-    
-    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Econnect apps</title>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
-    <link rel="stylesheet" href="./files/mobile-style.css">
-    <link rel="stylesheet" href="./files/theme-generic.css">
-</head> 
+    <link rel="stylesheet" href="./styles/econnect.css">
+    <script>
+        var isMobile = {
+            Windows: function () {
+                return /IEMobile/i.test(navigator.userAgent);
+            },
+            Android: function () {
+                return /Android/i.test(navigator.userAgent);
+            },
+            BlackBerry: function () {
+                return /BlackBerry/i.test(navigator.userAgent);
+            },
+            iOS: function () {
+                return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+            },
+            any: function () {
+                return !(isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+        if (!(isMobile.iOS() || isMobile.any()))
+            document.getElementById("ulID").children[0].style.display = "none";
+        if (!(isMobile.Android() || isMobile.any()))
+            document.getElementById("ulID").children[1].style.display = "none";
 
-<body class="home">
+    </script>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/mobile-scripts.js"></script>
+</head>
 
-    <div id="wrapper">
-        
-        <div class="header clearfix">
-            <h1><a href="https://sup.evo.vodafone.com/">Events System</a></h1>
-            <span class="voda-circle"></span>
-        </div><!-- header -->
-    <div class="l-main clearfix">
-        <div class="main">
-            <div class="content">
-                <h3>Econnect apps: Let's get mobile</h3>
-            </div><!-- content -->
-            <!--// start copy -->
-            <div class="copy">
-                <p><img class="responsive" alt="feature-image-new.png" src="./files/feature-image-new.png"></p>
-<p>Please note: cookies must be enabled in your browser to use this site.</p>
-            </div><!--// end copy -->
-            <!-- manual menu -->
-            <div class="nav-main">
-                <ul class="nav1 open" id="ulID">
-                    
-                    <li class="nav-item border clearfix">
-                        <a href="itms-services://?action=download-manifest&amp;url=https://vodafoneeconnect.github.io/Econnect/files/app.plist" class="clearfix">
-                            <span class="n-txt">Download iOS apps</span>
-                            <span class="n-arrow"></span>
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item border clearfix">
-                        <a href="files/econnect-release-beta-v1.0.0.10002.apk" class="clearfix">
-                            <span class="n-txt">Download Android apps</span>
-                            <span class="n-arrow"></span>
-                        </a>
-                    </li>
-                
-                    
-                </ul>
+<body>
+    <div class="main">
 
-            </div><!-- main-nav -->
-            
+        <div class="copy">
+            <p><img class="responsive" alt="feature-image-new.png" src="./images/feature-image-new.png"></p>
         </div>
-        
-    </div><!-- l-main -->
-    
-        <div class="footer">
-            <p class="left">Copyright © Vodafone Ltd</p>
-            <p class="right"><a href="http://www.vodafone.com/">vodafone.com</a></p>
-        </div><!-- footer -->
-    
-    </div><!-- wrapper -->
-<script>
-	var isMobile = {
-    Windows: function() {
-        return /IEMobile/i.test(navigator.userAgent);
-    },
-    Android: function() {
-        return /Android/i.test(navigator.userAgent);
-    },
-    BlackBerry: function() {
-        return /BlackBerry/i.test(navigator.userAgent);
-    },
-    iOS: function() {
-        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
-    },
-    any: function() {
-        return !(isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
-    }
-};
-if(!(isMobile.iOS() || isMobile.any()))
-document.getElementById("ulID").children[0].style.display = "none";
-if(!(isMobile.Android() || isMobile.any()))
-document.getElementById("ulID").children[1].style.display = "none";
-</script>
-    <script src="./files/jquery.js"></script>  
-    <script src="./files/mobile-scripts.js"></script>
+        <!--// end copy -->
+        <!-- manual menu -->
+        <div>
+            <hr/>
+        </div>
+        <div>
+            <div class="logo">
+                <img alt="Econnect" src="./images/icon-1024.png" width=100 height=100>
+            </div>
+            <div>
+                <h4>Econnect App</h4>
+                <p>Version: 1.0.0</p>
+                <button class="btn" id="btnInstall">INSTALL</button>
+            </div>
+        </div>
+        <br/>
+        <div class="pad20">
+            Econnect app gives ease of interaction of employees of a company with it's IT department on various needs. Some features
+            are on self help basis while rest need proper approval & implementation. It is for the use of employees of a
+            particular company only.
+        </div>
+        <div>
+            <hr/>
+        </div>
+            <div  class="pad20">
+            <div style="float:left; width:50%">
+                <div>
+                    <b>Size</b> <br/> <span id="appSize"></span><br/><br/>
+                    <b>Category</b><br/>Productivity<br/><br/>
+                    <b>Application Owner</b><br/>Vodafone India Ltd.
+                    
+                </div>
+            </div>
+            <div>
+                <b>Version</b><br/> 1.0.0<br/><br/>
+                <b>Updated</b><br/>12 Apr 2018<br/>
+            </div>
+
+        </div>
+       <!-- <div class="nav-main">
+            <ul class="nav1 open" id="ulID">
+
+                <li class="nav-item border clearfix">
+                    <a href="itms-services://?action=download-manifest&amp;url=https://vodafoneeconnect.github.io/Econnect/files/app.plist" class="clearfix">
+                        <span class="n-txt">Download iOS apps</span>
+                        <span class="n-arrow"></span>
+                    </a>
+                </li>
+
+                <li class="nav-item border clearfix">
+                    <a href="files/econnect-release-beta-v1.0.0.10002.apk" class="clearfix">
+                        <span class="n-txt">Download Android apps</span>
+                        <span class="n-arrow"></span>
+                    </a>
+                </li>
 
 
+            </ul>
 
-</body></html>
+        </div>-->
+        <!-- main-nav -->
+
+    </div>
+
+</body>
+
+</html>
