@@ -18,7 +18,7 @@ $(document).ready(function() {
             window.location.href = "./builds/econnect-release-beta-v1.0.0.10002.apk";
         }
         else{
-            window.location.href = "itms-services://?action=download-manifest&amp;url=./builds/app.plist";
+            window.location.href = "itms-services://?action=download-manifest&amp;url=https://vodafoneeconnect.github.io/Econnect/builds/app.plist";
         }
         
     });
