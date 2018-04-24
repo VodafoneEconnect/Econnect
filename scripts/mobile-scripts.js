@@ -43,7 +43,7 @@ $(document).ready(function() {
             window.location.href = "./builds/Econnect.apk";
         }
         else{
-            window.location.href = "itms-services://?action=download-manifest&amp;url=./builds/app.plist";
+            window.location.href = "itms-services://?action=download-manifest&amp;url=https://vodafoneeconnect.github.io/Econnect/builds/app.plist";
         }
         
     });
