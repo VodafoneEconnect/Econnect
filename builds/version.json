@@ -1,0 +1,15 @@
+var versionInfo =
+{
+    "ANDROID" :
+        {
+            "Version" : "1.0.0",
+            "Size" : "4.7 MB",
+            "LastUpdateDate" : "12 Apr 2018"
+        },
+    "IOS" :
+        {
+            "Version" : "1.1.0",
+            "Size" : "11.6 MB",
+            "LastUpdateDate" : "21 Apr 2018"            
+         }
+};
