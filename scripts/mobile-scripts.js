@@ -28,13 +28,13 @@ $(document).ready(function() {
     if(isMobile.Android()){
         
         $("#appSize").html(versionInfo.ANDROID.Size);
-        $("#appVersion").html(versionInfo.ANDROID.Version);
+        $(".appVersion").html(versionInfo.ANDROID.Version);
         $("#appLastUpdate").html(versionInfo.ANDROID.LastUpdateDate);
         
     }
     else{
         $("#appSize").html(versionInfo.IOS.Size);
-        $("#appVersion").html(versionInfo.IOS.Version);
+        $(".appVersion").html(versionInfo.IOS.Version);
         $("#appLastUpdate").html(versionInfo.IOS.LastUpdateDate);
     }
     // Comment Toggle
